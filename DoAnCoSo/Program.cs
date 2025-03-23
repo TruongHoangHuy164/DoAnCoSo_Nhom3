@@ -20,20 +20,20 @@ builder.Services.AddIdentity<IdentityUser, IdentityRole>()
 builder.Services.AddRazorPages();
 
 
-//cấu hình login google account
-builder.Services.AddAuthentication(options =>
-{
-    //options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-    //options.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-    //options.DefaultChallengeScheme = GoogleDefaults.AuthenticationScheme;
-})
-.AddCookie()
-.AddGoogle(GoogleDefaults.AuthenticationScheme, options =>
-{
-    options.ClientId = builder.Configuration["GoogleKeys:ClientId"];
-    options.ClientSecret = builder.Configuration["GoogleKeys:ClientSecret"];
-    options.SaveTokens = true;
-});
+////cấu hình login google account
+//builder.Services.AddAuthentication(options =>
+//{
+//    //options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+//    //options.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+//    //options.DefaultChallengeScheme = GoogleDefaults.AuthenticationScheme;
+//})
+//.AddCookie()
+//.AddGoogle(GoogleDefaults.AuthenticationScheme, options =>
+//{
+//    options.ClientId = builder.Configuration["GoogleKeys:ClientId"];
+//    options.ClientSecret = builder.Configuration["GoogleKeys:ClientSecret"];
+//    options.SaveTokens = true;
+//});
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
