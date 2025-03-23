@@ -17,8 +17,8 @@
                         <img class="position-absolute w-100 h-100" src="img/banner/banner.jpg" style="object-fit: cover;">
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 700px;">
-                                <h1 class="display-4 text-white mb-3 animate__animated animate__fadeInDown">Trẻ Trung</h1>
-                                <p class="mx-md-5 px-5 animate__animated animate__bounceIn">Đôi giày thể thao với thiết kế năng động, giúp bạn tự tin sải bước mọi lúc mọi nơi. Chất liệu êm ái, thoáng khí mang đến sự thoải mái tối đa suốt cả ngày! 👟✨</p>
+                                <h1 class="display-4 text-white">Chăm Sóc Thú Cưng</h1>
+                                <p class="text-white">Cung cấp đồ ăn, phụ kiện & dịch vụ tốt nhất cho bé cưng của bạn!</p>
                                 <a asp-controller="Shop" asp-action="Index" class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp">Shop Now</a>
                             </div>
                         </div>
@@ -27,8 +27,8 @@
                         <img class="position-absolute w-100 h-100" src="~/img/banner/bannerMeo.jpg" style="object-fit: cover;">
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 700px;">
-                                <h1 class="display-4 text-white mb-3 animate__animated animate__fadeInDown">Năng Động</h1>
-                                <p class="mx-md-5 px-5 animate__animated animate__bounceIn">Đôi giày thiết kế trẻ trung, linh hoạt, phù hợp cho những bước chân tràn đầy sức sống và nhiệt huyết. 👟⚡</p>
+                                <h1 class="display-4 text-white">Phụ Kiện Độc Đáo</h1>
+                                <p class="text-white">Từ vòng cổ đến đồ chơi - đầy đủ cho boss yêu của bạn!</p>
                                 <a asp-controller="Shop" asp-action="Index" class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp">Shop Now</a>
                             </div>
                         </div>
@@ -37,8 +37,8 @@
                         <img class="position-absolute w-100 h-100" src="~/img/banner/bannerCHOMEO.jpg" style="object-fit: cover;">
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 700px;">
-                                <h1 class="display-4 text-white mb-3 animate__animated animate__fadeInDown">Sáng Tạo</h1>
-                                <p class="mx-md-5 px-5 animate__animated animate__bounceIn"> Phá cách với kiểu dáng độc đáo, chất liệu hiện đại, mang đến phong cách mới lạ và đầy cá tính. 🎨🔥</p>
+                                <h1 class="display-4 text-white">Thức Ăn Dinh Dưỡng</h1>
+                                <p class="text-white">Thức ăn chất lượng cao, giúp bé cưng khỏe mạnh & vui vẻ!</p>
                                 <a asp-controller="Shop" asp-action="Index" class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp">Shop Now</a>
                             </div>
                         </div>
@@ -53,8 +53,8 @@
             <div class="product-offer mb-30" style="height: 200px;">
                 <img class="img-fluid" src="~/img/banner/giamgia.jpg" alt="Giảm giá 1">
                 <div class="offer-text">
-                    <h6 class="text-white text-uppercase">Save 20%</h6>
-                    <h3 class="text-white mb-3">Special Offer</h3>
+                    <h6 class="text-white">Giảm 20%</h6>
+                    <h3 class="text-white">Ưu Đãi Dành Cho Boss</h3>
                     <a asp-controller="Shop" asp-action="Index" class="btn btn-primary">Shop Now</a>
                 </div>
             </div>
@@ -62,8 +62,8 @@
             <div class="product-offer mb-30" style="height: 200px;">
                 <img class="img-fluid" src="~/img/banner/phukien.jpg" alt="Giảm giá 2">
                 <div class="offer-text">
-                    <h6 class="text-white text-uppercase">Save 20%</h6>
-                    <h3 class="text-white mb-3">Special Offer</h3>
+                    <h6 class="text-white">Giảm 20%</h6>
+                    <h3 class="text-white">Ưu Đãi Dành Cho Boss</h3>
                     <a asp-controller="Shop" asp-action="Index" class="btn btn-primary">Shop Now</a>
                 </div>
             </div>
@@ -182,7 +182,7 @@
     <div class="row px-xl-5">
         <div class="col-md-6">
             <div class="product-offer mb-30" style="height: 300px;">
-                <img class="img-fluid" src="img/giamGia1.jpg" alt="">
+                <img class="img-fluid" src="~/img/banner/ThucAnCho.jpg" alt="">
                 <div class="offer-text">
                     <h6 class="text-white text-uppercase">Save 20%</h6>
                     <h3 class="text-white mb-3">Special Offer</h3>
@@ -192,7 +192,7 @@
         </div>
         <div class="col-md-6">
             <div class="product-offer mb-30" style="height: 300px;">
-                <img class="img-fluid" src="img/giamGia2.jpg" alt="">
+                <img class="img-fluid" src="~/img/banner/ThucAnMeo.jpg" alt="">
                 <div class="offer-text">
                     <h6 class="text-white text-uppercase">Save 20%</h6>
                     <h3 class="text-white mb-3">Special Offer</h3>
@@ -277,4 +277,19 @@
         width: 90px;
         height: 172px;
         object-fit: contain; /* Giữ nguyên tỷ lệ và căn giữa */
+    }
+      .product-offer img{
+        width: 100%; /* Chiếm toàn bộ chiều rộng của div */
+        height: auto; /* Tự động điều chỉnh chiều cao theo tỷ lệ */
+        object-fit: contain; /* Giữ nguyên tỉ lệ ảnh mà không cắt */
+    }
+
+    .product-offer {
+        height: auto; /* Để div cha tự co giãn theo ảnh */
+    }
+    .col-md-6{
+        height: 505px;
+    }
+
+
     }</style>
